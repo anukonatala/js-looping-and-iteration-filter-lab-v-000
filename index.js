@@ -1,5 +1,5 @@
 // Code your solution in this file
-findMatching(drivers, name){
+function findMatching(drivers, name){
   let matchedArray = [];
   for(let driver of drivers){
     let changedDriver = driver.toLowerCase();
