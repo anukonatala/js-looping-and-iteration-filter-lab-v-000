@@ -25,7 +25,7 @@ function matchName(drivers, name){
   let matchedArray = [];
   for(const driver of drivers){
  
-    if(driver == matchString){
+    if(driver.name == name){
       matchedArray.push(driver);
     }
   }
