@@ -10,11 +10,11 @@ function findMatching(drivers, name){
   return matchedArray;
 }
 
-fuzzyMatch(drivers, matchString){
+function fuzzyMatch(drivers, matchString){
   let matchedArray = [];
   for(let driver of drivers){
     let partString = driver.slice(0,2);
-    if(partString == matchString{
+    if(partString == matchString){
       matchedArray.push(driver);
     }
   }
