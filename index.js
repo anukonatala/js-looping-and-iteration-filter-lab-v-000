@@ -23,8 +23,8 @@ function fuzzyMatch(drivers, matchString){
 
 function matchName(drivers, name){
   let matchedArray = [];
-  for(let driver in drivers){
-    let partString = driver.slice(0,2);
+  for(const driver of drivers){
+    let driver = driver.slice(0,2);
     if(partString == matchString){
       matchedArray.push(driver);
     }
