@@ -20,3 +20,14 @@ function fuzzyMatch(drivers, matchString){
   }
   return matchedArray;
 }
+
+function matchName(drivers, matchString){
+  let matchedArray = [];
+  for(let driver of drivers){
+    let partString = driver.slice(0,2);
+    if(partString == matchString){
+      matchedArray.push(driver);
+    }
+  }
+  return matchedArray;
+}
