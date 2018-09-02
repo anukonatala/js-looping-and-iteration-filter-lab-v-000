@@ -21,9 +21,9 @@ function fuzzyMatch(drivers, matchString){
   return matchedArray;
 }
 
-function matchName(drivers, matchString){
+function matchName(drivers, name){
   let matchedArray = [];
-  for(let driver of drivers){
+  for(let driver in drivers){
     let partString = driver.slice(0,2);
     if(partString == matchString){
       matchedArray.push(driver);
