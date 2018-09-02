@@ -13,8 +13,8 @@ function findMatching(drivers, name){
 fuzzyMatch(drivers, matchString){
   let matchedArray = [];
   for(let driver of drivers){
-    let partString = driver.slice(0,2);
-    if(partString == name.toLowerCase()){
+    let partString = driver.slice(0,2).toLowerCase();
+    if(partString == matchString.toLowerCase()){
       matchedArray.push(driver);
     }
   }
